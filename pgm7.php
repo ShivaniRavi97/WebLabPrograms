@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>	
 <html>
 <head>
+	<meta http-equiv="refresh" content="1"/>
 	<style>
 		p{
 			font-size: 90px;
@@ -14,6 +15,14 @@
 			background-color: black;
 		}
 	</style>
-	<p><?php echo date("h:i:s A"); ?></p>
+	<p>
+
+	<?php 
+
+     /// If date displayed is wrong, add the below line. This indiactes that the timezone set was different. ///
+	//date_default_timezone_set("Asia/Kolkata");
+	echo date("h:i:s A"); 
+	?>
+	</p>
 </head>
 </html>
